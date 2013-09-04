@@ -15,8 +15,8 @@ class User < ActiveRecord::Base
   validates :profile_name, presence: true,
                            uniqueness: true,
                            format: {
-                            with: /a-zA-Z0-9_-/,
-                            message: 'must be formatted correctly. No spaces!'
+                            with: /\A[a-zA-Z\-\_]+\Z/,
+                            message: "must be formatted correctly. No spaces!"
                            }
   has_many :statuses
   
