@@ -3,3 +3,9 @@ robert:
   last_name: "Graves"
   profile_name: "robertjgraves"
   email: "robertjgraves@gmail.com"
+
+kelly:
+  first_name: "Kelly"
+  last_name: "Graves"
+  profile_name: "kellygraves"
+  email: "kellygraves@gmail.com"
