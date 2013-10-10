@@ -9,3 +9,15 @@ kelly:
   last_name: "Graves"
   profile_name: "kellygraves"
   email: "kellygraves@gmail.com"
+
+william:
+  first_name: "William"
+  last_name: "Graves"
+  profile_name: "wmg"
+  email: "wmg@email.com"
+
+emily:
+  first_name: "Emily"
+  last_name: "Graves"
+  profile_name: "emg"
+  email: "emg@email.com"
