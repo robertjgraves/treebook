@@ -1,6 +1,7 @@
 <div class="page-header">
 	<h1>
 		<%= @user.full_name %>
+		<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: "btn" %>
 	</h1>
 </div>
 

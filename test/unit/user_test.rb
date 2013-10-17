@@ -62,5 +62,7 @@ class UserTest < ActiveSupport::TestCase
     assert users(:robert).friends.include?(users(:william))
   end
 
-  
+  test "that calling to_param on a user returns the profile_name" do
+    assert_equal "robertjgraves", users(:robert).to_param
+  end
 end

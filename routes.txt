@@ -1,0 +1,33 @@
+           profiles_show GET    /profiles/show(.:format)         profiles#show
+        new_user_session GET    /users/sign_in(.:format)         devise/sessions#new
+            user_session POST   /users/sign_in(.:format)         devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)        devise/sessions#destroy
+           user_password POST   /users/password(.:format)        devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)    devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)   devise/passwords#edit
+                         PUT    /users/password(.:format)        devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)          devise/registrations#cancel
+       user_registration POST   /users(.:format)                 devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)         devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)            devise/registrations#edit
+                         PUT    /users(.:format)                 devise/registrations#update
+                         DELETE /users(.:format)                 devise/registrations#destroy
+                register GET    /register(.:format)              devise/registrations#new
+                   login GET    /login(.:format)                 devise/sessions#new
+                  logout GET    /logout(.:format)                devise/sessions#destroy
+        user_friendships POST   /user_friendships(.:format)      user_friendships#create
+    new_user_friendships GET    /user_friendships/new(.:format)  user_friendships#new
+   edit_user_friendships GET    /user_friendships/edit(.:format) user_friendships#edit
+                         GET    /user_friendships(.:format)      user_friendships#show
+                         PUT    /user_friendships(.:format)      user_friendships#update
+                         DELETE /user_friendships(.:format)      user_friendships#destroy
+                    feed GET    /feed(.:format)                  statuses#index
+                statuses GET    /statuses(.:format)              statuses#index
+                         POST   /statuses(.:format)              statuses#create
+              new_status GET    /statuses/new(.:format)          statuses#new
+             edit_status GET    /statuses/:id/edit(.:format)     statuses#edit
+                  status GET    /statuses/:id(.:format)          statuses#show
+                         PUT    /statuses/:id(.:format)          statuses#update
+                         DELETE /statuses/:id(.:format)          statuses#destroy
+                    root        /                                statuses#index
+                 profile GET    /:id(.:format)                   profiles#show

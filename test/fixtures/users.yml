@@ -3,21 +3,25 @@ robert:
   last_name: "Graves"
   profile_name: "robertjgraves"
   email: "robertjgraves@gmail.com"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
 
 kelly:
   first_name: "Kelly"
   last_name: "Graves"
   profile_name: "kellygraves"
   email: "kellygraves@gmail.com"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
 
 william:
   first_name: "William"
   last_name: "Graves"
   profile_name: "wmg"
   email: "wmg@email.com"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
 
 emily:
   first_name: "Emily"
   last_name: "Graves"
   profile_name: "emg"
   email: "emg@email.com"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
