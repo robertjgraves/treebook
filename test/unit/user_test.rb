@@ -40,7 +40,7 @@ class UserTest < ActiveSupport::TestCase
 
   	assert !user.save
   	assert !user.errors[:profile_name].empty?
-  	assert user.errors[:profile_name].include?("must be formatted correctly. No spaces!")
+  	assert user.errors[:profile_name].include?("Must be formatted correctly.")
   end
 
   test "a user can have a correctly formatted profile name" do
@@ -57,9 +57,9 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "that creating friendships on a user works" do
-    users(:robert).friends << users(:william)
-    users(:robert).friends.reload
-    assert users(:robert).friends.include?(users(:william))
+    users(:robert).pending_friends << users(:william)
+    users(:robert).pending_friends.reload
+    assert users(:robert).pending_friends.include?(users(:william))
   end
 
   test "that calling to_param on a user returns the profile_name" do
