@@ -50,4 +50,14 @@ class UserFriendshipsController < ApplicationController
 		@friend = User.where(profile_name: params[:id]).first
     	@user_friendship = current_user.user_friendships.where(friend_id: @friend.id).first
 	end
+
+	def destroy
+		@user_friendship = current_user.user_friendships.find(params[:id])
+    	
+    	if @user_friendship.destroy
+     		 flash[:success] = "Friendship destroyed"
+   		end
+    	redirect_to user_friendships_path
+
+	end
 end
