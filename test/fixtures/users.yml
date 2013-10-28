@@ -25,3 +25,10 @@ emily:
   profile_name: "emg"
   email: "emg@email.com"
   encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
+
+blocked_friend:
+  first_name: "Blocked"
+  last_name: "Friend"
+  profile_name: "youblockedme"
+  email: "blocked@email.com"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
